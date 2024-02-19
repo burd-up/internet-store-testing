@@ -1,0 +1,161 @@
+---
+- summary: |
+    Не работает переход в каталог через лого
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/cart
+    2. Нажать на лого в навигационной панели сайта
+  expected-result: |
+    Отображается страница каталога 
+  actual-result: |
+    Ничего не происходит
+    
+- summary: |
+    Не полный список категорий в блоке с фильтрацией
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Раскрыть меню "Категория" 
+    3. Сделать скриншот категорий
+    4. Перейти на следующую страницу каталога
+    5. Сравнить значения меню "Категория" предыдущей страницы и текущей
+  expected-result: |
+    Список категорий тот же что и на предыдущей странице 
+  actual-result: |
+    Список категорий изменился
+
+- summary: |
+    Не полный список производителей в блоке с фильтрацией
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Сделать скриншот производителей
+    3. Перейти на следующую страницу каталога
+    5. Сравнить значения меню "Производитель" предыдущей страницы и текущей
+  expected-result: |
+    Список производителей тот же что и на предыдущей странице 
+  actual-result: |
+    Список производителей изменился
+    
+- summary: |
+    Не работает поиск товара по ключевому слову
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Ввести в поиске "Motorbike"
+  expected-result: |
+    В списке товаров должен появиться товар "Black Motorbike"
+  actual-result: |
+    Список товаров пуст
+
+- summary: |
+    Не работает поиск товара по цене
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Ввести в диапазон цены значения от 80 до 120
+  expected-result: |
+    Должен быть выведен список товаров
+    "Non-Alcoholic Concentrated Perfume Oil", 
+    "Sneaker shoes", 
+    "sublimation plain kids tank", 
+    "Sleeve Shirt Womens", 
+    "Leather Straps Wristwatch", 
+    "Rose Ring"
+  actual-result: |
+    Список товаров пуст
+
+- summary: |
+    Не работает поиск товара по ключевому слову, категории, производителю, наличию и цене
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Ввести в поиске "iPhone", диапазон цен от 400 до 800, выбрать категорию "smartphones", активировать чекбокс "В наличии", Выбрать производителя "Apple"
+  expected-result: |
+    Должен быть выведен список товаров 
+    "iPhone 9",
+    "iPhone X"
+  actual-result: |
+    В списке товаров только "iPhone 9"
+
+- summary: |
+    Не работает поиск товара по производителю и цене
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Ввести диапазон цен от 1000 до 1450, выбрать производителя "Samsung"
+  expected-result: |
+    Должен быть выведен список товаров 
+    "Samsung Universe 9",
+    "Samsung Galaxy Book"
+  actual-result: |
+    В списке товаров только "Samsung Universe 9"
+
+- summary: |
+    Нет кнопки сброса фильтра
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+  expected-result: |
+    В блоке фильтрации должна быть кнопка сброса фильтров 
+  actual-result: |
+    В блоке фильтрации нет кнопки сброса фильтров 
+
+- summary: |
+    Не корректно работает переход между страницами каталога
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Пролистать до последней страницы каталога
+    3. Сделать скриншот последней страницы
+    4. Перейти на предыдущую страницу и сравнить список товаров последней и предпоследней страниц
+  expected-result: |
+    Должна отобразиться страница с полностью новым списком уникальных товаров
+  actual-result: |
+    На странице присутствуют товары с предыдущей страницы
+
+- summary: |
+    Не реализована функция появления панели уменьшения, увеличения товаров после нажатия "В корзину"
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Открыть страницу https://hexlet-products-store.vercel.app/
+    2. Нажать на кнопку "В корзину" у любого товара
+  expected-result: |
+    Вместо кнопки "В корзину" должна появиться панели уменьшения, увеличения товаров
+  actual-result: |
+    Остается кнопка "В корзину"
+
+- summary: |
+    Не работает переход на страницу оплаты заказа
+  environment: |
+    Google Chrome 121.0.6167.161 (Официальная сборка), (64 бит)
+    ОС Windows 11
+  steps-to-reproduce: |
+    1. Добавить товар в корзину
+    2. Перейти в корзину
+    3. Нажать на кнопку "Оформить заказ"
+  expected-result: |
+    Переход на страницу оплаты
+  actual-result: |
+    Появляется попап окно без возможности оплаты заказа
+    
