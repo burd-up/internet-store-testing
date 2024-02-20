@@ -5,7 +5,7 @@
     Кнопка "Корзина" должна открывать корзину 
   prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: | 
   steps:
     - Нажимаем кнопку "Корзина"
   expected-result: |
@@ -17,7 +17,7 @@
     Кнопка "Магазин" должна открывать каталог 
   prerequisites: |
     Открыта страница корзины 
-  test-data: 
+  test-data: | 
   steps:
     - Нажимаем кнопку "Магазин"
   expected-result: |
@@ -29,7 +29,7 @@
     Нажатие на лого должно открывать каталог
   prerequisites: |
     Открыта страница корзины 
-  test-data: 
+  test-data: | 
   steps:
     - Нажимаем на лого
   expected-result: |
@@ -97,7 +97,7 @@
     Пользователь должен иметь возможность искать товары по ключевому слову или категории
   prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
-  test-data:   
+  test-data: |   
   steps:
     - выбераем из выподающего меню "Категория" опцию "smartphones"
   expected-result: |
@@ -114,7 +114,7 @@
     Активация чекбокса "В наличии" должна выводить только товары в наличии
   prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: | 
   steps:
     - Устанавливаем флажек в чекбокс "В наличии"
   expected-result: |
@@ -145,7 +145,7 @@
     Выбор производителя в меню "Производитель" должен выводить товары выбрранных производителей
   prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: | 
   steps:
     - Выбрать в меню "Производитель" производителя "Apple"
   expected-result: |
@@ -160,7 +160,7 @@
     Выбор производителя в меню "Производитель" должен выводить товары выбрранных производителей
   prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: | 
   steps:
     - Выбрать в меню "Производитель" производителей "Apple", "Samsung", "OPPO"
   expected-result: |
@@ -214,7 +214,7 @@
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     Включены все типы фильтрации в блоке с фильтрами 
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на кнопку "Сбросить" в блоке с фильтрами
   expected-result: |
@@ -226,7 +226,7 @@
     На странице каталога товаров должна быть панель пагинации 
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на кнопку "Следующая" в панели пагинации
   expected-result: |
@@ -238,7 +238,7 @@
     На странице каталога товаров должна быть панель пагинации 
   prerequisites: |
     Открыта последняя страница каталога 
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на кнопку "Предыдущая" в панели пагинации
   expected-result: |
@@ -250,7 +250,7 @@
     При нажатии кнопки "В корзину" кнопка должна меняться на панель увеличение, уменьшения количества товара
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на кнопку "В корзину" у любого товара 
   expected-result: |
@@ -262,7 +262,7 @@
     Каждый товар должен иметь свою страницу с названием, описанием, рейтингом, ценаой со скидкой и без нее, кнопкой "В корзину"
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на любой товар в каталоге 
   expected-result: |
@@ -275,7 +275,7 @@
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     Корзина должна быть пуста
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на кнопку "В корзину" у любого товара
     - нажимаем на кнопку "Корзина" на навигационной панели
@@ -289,7 +289,7 @@
   prerequisites: |
     Открыта страница корзины
     Вкорзине должен быть товар
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на кнопку "Удалить" у товара
   expected-result: |
@@ -302,7 +302,7 @@
   prerequisites: |
     Открыта страница https://hexlet-products-store.vercel.app/
     Корзина должна быть пуста
-  test-data: 
+  test-data: | 
   steps:
     - Нажимаем кнопку "В корзину" у любого из товаров 
   expected-result: |
@@ -315,7 +315,7 @@
   prerequisites: |
     Открыта страница корзины
     Вкорзине должен быть товар
-  test-data: 
+  test-data: | 
   steps:
     - Нажимаем кнопку "Удалить" у товара
   expected-result: |
@@ -327,7 +327,7 @@
     Информация о корзине должна храниться в сессии браузера
   prerequisites: |
     Вкорзине должен быть товар
-  test-data: 
+  test-data: | 
   steps:
     - открываем dev tools 
     - переходим во вкладку Application
@@ -342,7 +342,7 @@
   prerequisites: |
     В корзине есть товар
     Открыта страница корзины
-  test-data: 
+  test-data: | 
   steps:
     - нажимаем на кнопку "оформить заказ"
   expected-result: |
