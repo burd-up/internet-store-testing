@@ -15,7 +15,7 @@
     Успешный переход в каталог через навигационную панель
   requirement: |
     Кнопка "Магазин" должна открывать каталог 
-  prerequisites:
+  prerequisites: |
     Открыта страница корзины 
   test-data: 
   steps:
@@ -27,7 +27,7 @@
     Успешный переход в каталог через лого
   requirement: |
     Нажатие на лого должно открывать каталог
-  prerequisites:
+  prerequisites: |
     Открыта страница корзины 
   test-data: 
   steps:
@@ -39,7 +39,7 @@
     Успешная проверка полноты списка категорий в блоке с фильтрацией 
   requirement: |
     В меню "Категория" должен быть список всех категорий товаров из каталога
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     Категории = "womens-dresses", "sunglasses", "motorcycle"
@@ -53,7 +53,7 @@
     Успешная проверка полноты списка производителей в блоке с фильтрацией 
   requirement: |
     В меню "Производитель" должен быть список всех производителей товаров из каталога
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     Производители = "Top Sweater", "Steal Frame", "BRAVE BULL"
@@ -66,7 +66,7 @@
     Успешный поиск товара с текущей страницы каталога по ключевому слову 
   requirement: |
     Пользователь должен иметь возможность искать товары по ключевому слову или категории
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     Ключевое слово = iPhone
@@ -81,7 +81,7 @@
     Успешный поиск товара с последней страницы каталога по ключевому слову 
   requirement: |
     Пользователь должен иметь возможность искать товары по ключевому слову или категории
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     Ключевое слово = Motorbike
@@ -95,7 +95,7 @@
     Успешный поиск товара по категории
   requirement: |
     Пользователь должен иметь возможность искать товары по ключевому слову или категории
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data:   
   steps:
@@ -112,7 +112,7 @@
     Успешный поиск товаров по фильтру "В наличии"
   requirement: |
     Активация чекбокса "В наличии" должна выводить только товары в наличии
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: 
   steps:
@@ -124,7 +124,7 @@
     Успешный поиск товаров по цене 
   requirement: |
     Диапазон цен должен выводить товары цена которых с учетом скидки попадает в этот диапазон
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     От = 80 До = 120
@@ -143,7 +143,7 @@
     Успешный поиск товаров по одному производителю
   requirement: |
     Выбор производителя в меню "Производитель" должен выводить товары выбрранных производителей
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: 
   steps:
@@ -158,7 +158,7 @@
     Успешный поиск товаров по нескольким производителям
   requirement: |
     Выбор производителя в меню "Производитель" должен выводить товары выбрранных производителей
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: 
   steps:
@@ -176,7 +176,7 @@
     Успешный поиск товаров по ключевому слову, категории, производителю, наличию и цене
   requirement: |
     Пользователь должен иметь возможность фильтровать сразу по нескольким параметрам
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     Ключевое слово = iPhone От = 400 До = 800
@@ -195,7 +195,7 @@
     Успешный поиск товаров по производителю и цене
   requirement: |
     Пользователь должен иметь возможность фильтровать сразу по нескольким параметрам
-  prerequisites:
+  prerequisites: |
     открыта страница https://hexlet-products-store.vercel.app/
   test-data: |
     От = 1000 До = 1450
