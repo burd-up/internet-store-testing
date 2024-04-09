@@ -11,7 +11,7 @@
 
 Дополнительная информация о проекте может быть найдена в соответствующих директориях и файлах.
 
-Ссылка на [интернет-магазин](https://hexlet-products-store.vercel.app/) 
+Ссылка на интернет-магазин: https://hexlet-products-store.vercel.app/
 
 ```
 ### Hexlet tests and linter status:
